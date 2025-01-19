@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <title>Bio-Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid rgb(210, 208, 208);
+            border-radius: 20px;
+         
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            display: flex;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #c9c8c8;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            float: right;
+            margin-left:25px ;
+            width: auto;
+            
+        }
+        .skill-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .skill-table th, .skill-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #cacfcb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+        .submit-btn:hover {
+            background-color: #b3b5b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Bio-Data Form</h2>
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name">
+        
+        <label>Profile Picture:</label>
+        <input type="file">
+        
+        <p>For more details: <a href="https://iasscore.in/workshop">Visit our official website</a></p>
+        
+        <label>Password:</label>
+        <input type="password" placeholder="Enter a secure password">
+        
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email">
+        
+        <label>Age:</label>
+        <input type="number">
+        
+        <label>Date of Birth:</label>
+        <input type="date">
+        
+        <label>Favorite Color:</label>
+        <input type="color">
+        
+        <label>Upload Resume:</label>
+        <input type="file">
+        
+        <label>Gender:</label><br>
+        <input type="radio"  name="gender"> Male<br><br>
+        <input type="radio" name="gender"> Female<br><br>
+        <input type="radio"  name="gender"> Other<br><br>
+        
+        <label>Other Languages Known:</label><br>
+        <input type="checkbox"> English<br><br>
+        <input type="checkbox"> Hindi<br><br>
+        <input type="checkbox"> Spanish<br><br>
+        
+        <label>Years of Experience:</label>
+        <input type="range" min="0" max="50">
+        
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="123-456-7890">
+        
+        <label>Personal Website:</label>
+        <input type="url" placeholder="https://example.com">
+        
+        <label>Country:</label>
+        <select>
+            <option>Select your country</option>
+            <option>America</option>
+            <option>Afganisthan</option>
+            <option>Brazil</option>
+            <option>Bhutan</option>
+            <option>Canada</option>
+            <option>Denmark</option>
+            <option>England</option>
+            <option>France</option>
+            <option>India</option>        
+            <option>Ireland</option>
+            <option>Japan</option>
+            <option>Mexico</option>
+            <option>Ntherlands</option>
+            <option>Pakistan</option>
+            <option>Russia</option>
+            <option>south Korea </option>        
+        </select>
+        
+        <label>Address:</label>
+        <textarea placeholder="Enter your address"></textarea>
+        
+        <h3 style="text-align: center;">Skill Proficiency</h3>
+        <table class="skill-table">
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+                <th>Years of Experience</th>
+            </tr>
+            <tr>
+                <td>Programming</td>
+                <td>Advanced</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>Intermediate</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Cloud Computing</td>
+                <td>Expert</td>
+                <td>8</td>
+            </tr>
+        </table>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
