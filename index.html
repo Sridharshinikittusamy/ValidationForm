@@ -11,6 +11,7 @@
             padding: 20px;
             border: 1px solid rgb(210, 208, 208);
             border-radius: 20px;
+            background-color: lightblue;
          
         }
         h2 {
@@ -27,6 +28,7 @@
             margin-top: 5px;
             border: 1px solid #c9c8c8;
             border-radius: 5px;
+            background-color: ivory;
         }
         input[type="radio"], input[type="checkbox"] {
             float: right;
@@ -53,6 +55,7 @@
             border: none;
             border-radius: 5px;
             cursor:pointer;
+            align-content: center;
         }
         .submit-btn:hover {
             background-color: #b3b5b3;
@@ -65,7 +68,7 @@
     <h2>Bio-Data Form</h2>
     <form>
         <label>Full Name:</label>
-        <input type="text" placeholder="Enter your full name">
+        <input type="text" maxlength="18" placeholder="Enter your full name" required>
         
         <label>Profile Picture:</label>
         <input type="file">
@@ -104,7 +107,7 @@
         <input type="range" min="0" max="50">
         
         <label>Phone Number:</label>
-        <input type="tel" placeholder="123-456-7890">
+        <input type="number" placeholder="123-456-7890">
         
         <label>Personal Website:</label>
         <input type="url" placeholder="https://example.com">
